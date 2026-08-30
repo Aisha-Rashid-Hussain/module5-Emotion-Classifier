@@ -1,0 +1,8 @@
+Required python libraries for Emotion Classifier project:
+
+pandas
+numpy
+scikit-learn
+joblib
+streamlit
+matplotlib.pyplot
