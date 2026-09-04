@@ -82,3 +82,67 @@ from the training dataset.
 - Improve text preprocessing
 - Experiment with advanced NLP models
 - Add confidence scores to predictions
+
+## How to Run the Emotion Classifier
+
+Follow these steps to run the application locally:
+
+### 1. Clone or download the repository
+
+Download the project from GitHub and open the project folder in **VS Code**.
+
+### 2. Install the required libraries
+
+Open the VS Code terminal and run:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Make sure the required files are present
+
+The project folder should contain:
+
+```text
+Emotion-Classifier/
+│
+├── app.py
+├── emotion_model.pkl
+├── tfidf_vectorizer.pkl
+├── requirements.txt
+└── README.md
+```
+
+### 4. Run the Streamlit application
+
+In the VS Code terminal, run:
+
+```bash
+streamlit run app.py
+```
+
+### 5. Open the application
+
+After running the command, Streamlit will provide a local address such as:
+
+```text
+http://localhost:8501
+```
+
+Open this address in your web browser.
+
+### 6. Use the application
+
+1. Enter a sentence or text in the input box.
+2. Click **Predict Emotion**.
+3. The application will display the predicted emotion.
+
+### 7. Stop the application
+
+To stop the Streamlit server, return to the terminal and press:
+
+```text
+Ctrl + C
+```
+
+> **Note:** The `emotion_model.pkl` and `tfidf_vectorizer.pkl` files are required for the application to work. They contain the trained model and fitted TF-IDF vectorizer used to make predictions.
